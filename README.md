@@ -12,7 +12,7 @@ AATCCCGTGGAGGTTGGCATCCAGGTCACGCCAGAGGATGACGATTGTTTATCAACGTCA
 TCTAGAGGAATTTGCCCCAAACAGGAACACATAGCAG
 
 
-2) CRISPResso (crispresso.rocks) test dataset:
+2) CRISPResso (http://crispresso.rocks) test dataset:
 
 - fastq1: https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads1.2000.fastq.gz?raw=true
 
