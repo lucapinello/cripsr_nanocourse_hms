@@ -29,4 +29,4 @@ TCTAGAGGAATTTGCCCCAAACAGGAACACATAGCAG
 - On the website we enter the guide without the PAM TGAACCAGACCACGGCCCGT
 
 
-4) Nice intro do Docker: https://docker-curriculum.com/
+4) Nice intro to Docker: https://docker-curriculum.com/
