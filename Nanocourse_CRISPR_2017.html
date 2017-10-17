@@ -11726,7 +11726,9 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}@media print {
+}
+
+@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11747,7 +11749,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11771,7 +11773,8 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11780,7 +11783,8 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11805,9 +11809,7 @@ div#notebook {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
@@ -11839,7 +11841,8 @@ For more examples and ideas, visit:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11865,9 +11868,7 @@ For more examples and ideas, visit:
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              total        used        free      shared  buff/cache   available
@@ -11881,7 +11882,8 @@ Swap:          1.0G        468K        1.0G
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11907,9 +11909,7 @@ docker pull pinellolab/crispor_crispresso_nat_prot
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Using default tag: latest
@@ -11942,9 +11942,7 @@ docker pull lucapinello/cas-offinder
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Using default tag: latest
@@ -11977,9 +11975,7 @@ Status: Image is up to date for lucapinello/cas-offinder:latest
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>/Users/luca/nanocourse_examples
@@ -12034,9 +12030,7 @@ Status: Image is up to date for lucapinello/cas-offinder:latest
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Nanocourse_CRISPR_2017.ipynb	crispor_genomes
@@ -12063,7 +12057,8 @@ docker run -v <span class="nv">$PWD</span>/crispor_genomes:/crisporWebsite/genom
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12103,9 +12098,7 @@ docker run -v <span class="nv">$PWD</span>/crispor_genomes:/crisporWebsite/genom
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&gt;BCL11A
@@ -12140,9 +12133,7 @@ crispor.py hg19 crispor_input.fa crispor_output.tsv --satMutDir<span class="o">=
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:root:running on sequence ID &#39;BCL11A&#39;
@@ -12201,9 +12192,7 @@ INFO:root:guide info written to crispor_output.tsv
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ls
@@ -12254,9 +12243,7 @@ bash -c <span class="s2">&quot;head -n 10 BCL11A_satMutOligos.tsv &gt; BCL11A_sa
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>#guideId	targetSeq	mitSpecScore	offtargetCount	targetGenomeGeneLocus	Doench &#39;16EffScore	Moreno-MateosEffScore	Oligonucleotide	AdapterHandle+PrimerFw	AdapterHandle+PrimerRev
@@ -12322,9 +12309,7 @@ docker run -v <span class="nv">$PWD</span>:/DATA -w /DATA pinellolab/crispor_cri
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>#guideId forwardPrimer leftPrimerTm revPrimer revPrimerTm ampliconSequence guideSequence
@@ -12345,7 +12330,8 @@ docker run -v <span class="nv">$PWD</span>:/DATA -w /DATA pinellolab/crispor_cri
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12353,7 +12339,8 @@ docker run -v <span class="nv">$PWD</span>:/DATA -w /DATA pinellolab/crispor_cri
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12370,12 +12357,12 @@ TGAACCAGACCACGGCCCGT</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1">#let&#39;s download the data</span>
-wget http://bcb.dfci.harvard.edu/~lpinello/CRISPResso/reads1.fastq.gz
-wget http://bcb.dfci.harvard.edu/~lpinello/CRISPResso/reads2.fastq.gz
+wget https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads1.2000.fastq.gz?raw<span class="o">=</span><span class="nb">true</span> -O reads1.2000.fastq.gz
+wget https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads2.2000.fastq.gz?raw<span class="o">=</span><span class="nb">true</span> -O reads2.2000.fastq.gz
 </pre></div>
 
 </div>
@@ -12387,32 +12374,48 @@ wget http://bcb.dfci.harvard.edu/~lpinello/CRISPResso/reads2.fastq.gz
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
 
-
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--2017-10-15 19:56:27--  http://bcb.dfci.harvard.edu/~lpinello/CRISPResso/reads1.fastq.gz
-Resolving bcb.dfci.harvard.edu... 155.52.207.136
-Connecting to bcb.dfci.harvard.edu|155.52.207.136|:80... connected.
+<pre>--2017-10-17 13:35:31--  https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads1.2000.fastq.gz?raw=true
+Resolving github.com... 192.30.253.113, 192.30.253.112
+Connecting to github.com|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/lucapinello/cripsr_nanocourse_hms/raw/master/reads1.2000.fastq.gz [following]
+--2017-10-17 13:35:31--  https://github.com/lucapinello/cripsr_nanocourse_hms/raw/master/reads1.2000.fastq.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/lucapinello/cripsr_nanocourse_hms/master/reads1.2000.fastq.gz [following]
+--2017-10-17 13:35:31--  https://raw.githubusercontent.com/lucapinello/cripsr_nanocourse_hms/master/reads1.2000.fastq.gz
+Resolving raw.githubusercontent.com... 151.101.116.133
+Connecting to raw.githubusercontent.com|151.101.116.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 5729890 (5.5M) [application/x-gzip]
-Saving to: ‘reads1.fastq.gz’
+Length: 18908 (18K) [application/octet-stream]
+Saving to: ‘reads1.2000.fastq.gz’
 
-reads1.fastq.gz     100%[===================&gt;]   5.46M  6.19MB/s    in 0.9s    
+reads1.2000.fastq.g 100%[===================&gt;]  18.46K  --.-KB/s    in 0.03s   
 
-2017-10-15 19:56:28 (6.19 MB/s) - ‘reads1.fastq.gz’ saved [5729890/5729890]
+2017-10-17 13:35:32 (603 KB/s) - ‘reads1.2000.fastq.gz’ saved [18908/18908]
 
---2017-10-15 19:56:28--  http://bcb.dfci.harvard.edu/~lpinello/CRISPResso/reads2.fastq.gz
-Resolving bcb.dfci.harvard.edu... 155.52.207.136
-Connecting to bcb.dfci.harvard.edu|155.52.207.136|:80... connected.
+--2017-10-17 13:35:32--  https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads2.2000.fastq.gz?raw=true
+Resolving github.com... 192.30.253.113, 192.30.253.112
+Connecting to github.com|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/lucapinello/cripsr_nanocourse_hms/raw/master/reads2.2000.fastq.gz [following]
+--2017-10-17 13:35:32--  https://github.com/lucapinello/cripsr_nanocourse_hms/raw/master/reads2.2000.fastq.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/lucapinello/cripsr_nanocourse_hms/master/reads2.2000.fastq.gz [following]
+--2017-10-17 13:35:32--  https://raw.githubusercontent.com/lucapinello/cripsr_nanocourse_hms/master/reads2.2000.fastq.gz
+Resolving raw.githubusercontent.com... 151.101.116.133
+Connecting to raw.githubusercontent.com|151.101.116.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 6056590 (5.8M) [application/x-gzip]
-Saving to: ‘reads2.fastq.gz’
+Length: 20008 (20K) [application/octet-stream]
+Saving to: ‘reads2.2000.fastq.gz’
 
-reads2.fastq.gz     100%[===================&gt;]   5.78M  5.69MB/s    in 1.0s    
+reads2.2000.fastq.g 100%[===================&gt;]  19.54K  --.-KB/s    in 0.08s   
 
-2017-10-15 19:56:29 (5.69 MB/s) - ‘reads2.fastq.gz’ saved [6056590/6056590]
+2017-10-17 13:35:32 (249 KB/s) - ‘reads2.2000.fastq.gz’ saved [20008/20008]
 
 </pre>
 </div>
@@ -12424,14 +12427,14 @@ reads2.fastq.gz     100%[===================&gt;]   5.78M  5.69MB/s    in 1.0s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1">#finally we run CRISPResso</span>
 docker  run <span class="se">\</span>
 -v <span class="nv">$PWD</span>:/DATA <span class="se">\</span>
 -w /DATA pinellolab/crispor_crispresso_nat_prot  <span class="se">\</span>
-CRISPResso -r1 reads1.fastq.gz -r2 reads2.fastq.gz <span class="se">\</span>
+CRISPResso -r1 reads1.2000.fastq.gz -r2 reads2.2000.fastq.gz <span class="se">\</span>
 -a AATGTCCCCCAATGGGAAGTTCATCTGGCACTGCCCACAGGTGAGGAGGTCATGATCCCCTTCTGGAGCTCCCAACGGGCCGTGGTCTGGTTCATCATCTGTAAGAATGGCTTCAAGAGGCTCGGCTGTGGTT <span class="se">\</span>
 -g TGAACCAGACCACGGCCCGT <span class="se">\</span>
 -s <span class="m">20</span> <span class="se">\</span>
@@ -12448,80 +12451,75 @@ CRISPResso -r1 reads1.fastq.gz -r2 reads2.fastq.gz <span class="se">\</span>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
 
-
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO  @ Sun, 15 Oct 2017 23:56:33:
+<pre>INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Cut Points from guide seq:[76] 
 
-INFO  @ Sun, 15 Oct 2017 23:56:33:
-	 Creating Folder CRISPResso_on_BCL11A_exon2 
+WARNING @ Tue, 17 Oct 2017 17:35:39:
+	 Folder CRISPResso_on_BCL11A_exon2 already exists. 
 
-INFO  @ Sun, 15 Oct 2017 23:56:33:
-	 Done! 
-
-INFO  @ Sun, 15 Oct 2017 23:56:33:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Filtering reads with average bp quality &lt; 30 and single bp quality &lt; 20 ... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:13:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Estimating average read length... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:14:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Merging paired sequences with Flash... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:14:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Done! 
 
-INFO  @ Sun, 15 Oct 2017 23:57:14:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Preparing files for the alignment... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:14:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Done! 
 
-INFO  @ Sun, 15 Oct 2017 23:57:14:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Aligning sequences... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:33:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Align sequences to reverse complement of the amplicon... 
 
-INFO  @ Sun, 15 Oct 2017 23:57:33:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Done! 
 
-INFO  @ Sun, 15 Oct 2017 23:57:34:
+INFO  @ Tue, 17 Oct 2017 17:35:39:
 	 Quantifying indels/substitutions... 
 
-INFO  @ Sun, 15 Oct 2017 23:59:45:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Done! 
 
-INFO  @ Sun, 15 Oct 2017 23:59:45:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Calculating indel distribution based on the length of the reads... 
 
-INFO  @ Sun, 15 Oct 2017 23:59:47:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Done! 
 
-INFO  @ Sun, 15 Oct 2017 23:59:47:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Calculating alleles frequencies... 
 
-INFO  @ Mon, 16 Oct 2017 00:00:40:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Done! 
 
-INFO  @ Mon, 16 Oct 2017 00:00:40:
+INFO  @ Tue, 17 Oct 2017 17:35:40:
 	 Making Plots... 
 
 /opt/conda/lib/python2.7/site-packages/matplotlib/font_manager.py:1297: UserWarning: findfont: Font family [u&#39;sans-serif&#39;] not found. Falling back to DejaVu Sans
   (prop.get_family(), self.defaultFamily[fontext]))
-INFO  @ Mon, 16 Oct 2017 00:01:03:
+INFO  @ Tue, 17 Oct 2017 17:36:09:
 	 Done! 
 
-INFO  @ Mon, 16 Oct 2017 00:01:03:
+INFO  @ Tue, 17 Oct 2017 17:36:09:
 	 Removing Intermediate files... 
 
-INFO  @ Mon, 16 Oct 2017 00:01:03:
+INFO  @ Tue, 17 Oct 2017 17:36:09:
 	 Saving processed data... 
 
-INFO  @ Mon, 16 Oct 2017 00:01:04:
+INFO  @ Tue, 17 Oct 2017 17:36:09:
 	 All Done! 
 
   
@@ -12556,7 +12554,8 @@ Version 1.0.8
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12564,7 +12563,8 @@ Version 1.0.8
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12591,9 +12591,7 @@ docker run lucapinello/cas-offinder cas-offinder --help
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Cas-OFFinder v2.4 (Aug 17 2016)
@@ -12654,9 +12652,7 @@ TGAACCAGACCACGGCCCGT[TGG]
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>/Users/luca/nanocourse_examples
@@ -12700,9 +12696,7 @@ TGAACCAGACCACGGCCCGT[TGG]
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>/DATA/crispor_genomes/hg19/hg19.2bit
@@ -12738,9 +12732,7 @@ cas-offinder cas_offinder_input.txt C cas_offinder_output.txt
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Total 1 device(s) found.
@@ -12867,9 +12859,7 @@ Comparing patterns in chunk #31...
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>TGAACCAGACCACGGCCCGTNGG	chr1	36654002	TGgACCAGACCACaGgCCtaTGG	+	5
