@@ -14,9 +14,9 @@ TCTAGAGGAATTTGCCCCAAACAGGAACACATAGCAG
 
 2) CRISPResso (crispresso.rocks) test dataset:
 
-- fastq1: https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads1.2000.fastq.gz
+- fastq1: https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads1.2000.fastq.gz?raw=true
 
-- fastq2: https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads2.2000.fastq.gz
+- fastq2: https://github.com/lucapinello/cripsr_nanocourse_hms/blob/master/reads2.2000.fastq.gz?raw=true
 
 - amplicon sequence:  AATGTCCCCCAATGGGAAGTTCATCTGGCACTGCCCACAGGTGAGGAGGTCATGATCCCCTTCTGGAGCTCCCAACGGGCCGTGGTCTGGTTCATCATCTGTAAGAATGGCTTCAAGAGGCTCGGCTGTGGTT
 
