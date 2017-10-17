@@ -2,7 +2,7 @@
 
 
 
-1) CRISPOR (http://crispor.tefor.net/) sequence to test:
+1) CRISPOR (http://crispor.tefor.net/) sequence to test (exon from BCL11A Human obtained from http://www.ensembl.org/):
 
 - CCGAGCCTCTTGAAGCCATTCTTACAGATGATGAACCAGACCACGGCCCGTTG
 GGAGCTCCAGAAGGGGATCATGACCTCCTCACCTGTGGGCAGTGCCAGATGAACTTCCCA
